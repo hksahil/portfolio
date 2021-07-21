@@ -142,6 +142,7 @@
   display: inline-block;
   background: #f7fafc;
   padding: 0 5px 0 5px;
+  left: -29px;
 }
 
 .gradient {
@@ -162,6 +163,10 @@ body {
 /* mobile view */
 
 @media screen and (max-width: 600px) {
+  .build-title {
+    margin-top: -68px;
+  }
+
   .dummy::after {
     display: block;
     position: relative;
@@ -177,6 +182,7 @@ body {
   .timeline {
     overflow-x: auto;
     white-space: nowrap;
+    height: 526px;
   }
 
   .year-1 {
