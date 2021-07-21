@@ -163,6 +163,9 @@ body {
 /* mobile view */
 
 @media screen and (max-width: 600px) {
+  .journey {
+    margin-top: 13%;
+  }
   .build-title {
     margin-top: -68px;
   }
@@ -215,6 +218,9 @@ body {
 
 /* desktop */
 @media screen and (min-width: 600px) {
+  .journey {
+    margin-top: 3%;
+  }
   .dummy::after {
     display: block;
     position: relative;
