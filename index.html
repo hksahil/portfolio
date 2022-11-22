@@ -26,7 +26,13 @@
           display: none;
         }
       }
+      #date{
+        font-size: 20px;
+    font-weight: 700;
+    color: gray;
+      }
     </style>
+  
     <title>Sahil Choudhary</title>
   </head>
 
@@ -79,7 +85,7 @@
 
 <!-- Timeline Starts -->
     <section class="container mx-auto max-h-full text-center mb-12 text-black ">
-     <h1 class="w-full my-2 text-5xl font-bold leading-tight journey">Journey so far</h1>
+     <h1 class="w-full my-2 text-5xl font-bold leading-tight journey">Journey so far</h1><span id="date"></span>
      <div class="mx-10">
 
 <div class="m-4">
@@ -648,5 +654,16 @@
         background-color: #1801fd;
       }
     </style>
+    
   </body>
+  <script>
+    //The date logic goes here
+    var date=new Date(2020,6,1)
+    var today=new Date()
+    var difference=(today-date)/(1000*60*60*24*365) // 1000 is ms
+    var experience=difference.toFixed(1)
+    console.log(experience)
+    var newkey=`${experience}+ years of experience`
+    document.getElementById('date').innerHTML=newkey
+    </script>
 </html>
